@@ -54,11 +54,27 @@ const footballTeams = [
   { nome: "Pizzighettone" },
 ];
 compileFootballTeamsArray()
+const footballTeamsAndFouls = [];
+generateArrayFootballTeamsAndFouls();
+printFootballArray()
 
 function compileFootballTeamsArray() {
     for (let i=0; i<footballTeams.length;i++) {
         footballTeams[i].point = Math.floor((Math.random()*100));
         footballTeams[i].fouls = Math.floor((Math.random()*20));
-        console.log(footballTeams[i]);
     }
+}
+function generateArrayFootballTeamsAndFouls() {
+    for (let i=0; i<footballTeams.length;i++) {
+        footballTeamsAndFouls.push({
+        nome: footballTeams[i].nome,
+        fouls: footballTeams[i].fouls
+    })
+    }
+}
+function printFootballArray() {
+    console.log(footballTeams);
+
+    console.log(footballTeamsAndFouls);
+    
 }
