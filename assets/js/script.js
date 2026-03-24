@@ -24,15 +24,13 @@ function populateBicycleList() {
 }
 
 function lighterBicycleCheck() {
-  let lessWeight = bicycles[0].peso;
-  let lessWeightName = "";
-  for (let i = 0; i < bicycles.length; i++)
-    if (bicycles[i].peso < lessWeight) {
-      lessWeight = bicycles[i].peso;
-      lessWeightName = bicycles[i].nome;
+  let lessWeightBicycle = bicycles[0];
+  for (let i = 0; i < bicycles.length; i++) {
+    if (bicycles[i].peso < lessWeightBicycle.peso)
+      lessWeightBicycle=bicycles[i];
     }
-  lighterBicycleName.innerHTML = lessWeightName;
-  lighterBicycleWeight.innerHTML = "con i suoi " + lessWeight + "Kg";
+  lighterBicycleName.innerHTML = lessWeightBicycle.nome;
+  lighterBicycleWeight.innerHTML = "con i suoi " + lessWeightBicycle.peso + "Kg";
 }
 
 /*
