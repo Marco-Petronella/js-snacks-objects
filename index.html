@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Site</title> 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
 </head>
-<body class="container">
-<h1>Esercizi con oggetti</h1>
-<ul class="list-group" id="bicycle-list">
-  <!-- /#bicycle-list -->
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Nome bicicletta
-    <span>peso</span>
-  </li>
-</ul>
 
-<script src="assets/js/script.js"></script>
+<body class="container">
+  <h1>Esercizi con oggetti</h1>
+  <div class="row">
+    <ul class="col list-group" id="bicycle-list">
+      <!-- /#bicycle-list -->
+      <li class="list-group-item d-flex justify-content-between align-items-center list-title">
+        Nome bicicletta
+        <span>peso</span>
+      </li>
+    </ul>
+    <div class="card col" style="width:18rem;">
+      <img
+        src="assets/img/bicycle-paris.jpg"
+        class="card-img-top" alt="bicycle">
+      <div class="card-body">
+        <h5 class="card-title">La bicicletta più leggera è:</h5>
+        <h6 class="card-subtitle mb-2 text-muted" id="lighter-bicycle-name">Card subtitle</h6>
+        <p class="card-text" id="lighter-bicycle-weight">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
