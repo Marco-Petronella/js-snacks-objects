@@ -58,9 +58,12 @@ printFootballArray()
 
 function compileFootballTeamsArray() {
     for (let i=0; i<footballTeams.length;i++) {
-        footballTeams[i].point = Math.floor((Math.random()*100));
-        footballTeams[i].fouls = Math.floor((Math.random()*20));
+        footballTeams[i].point = getRandomNumber(100);
+        footballTeams[i].fouls = getRandomNumber(20);
     }
+}
+function getRandomNumber(max) {
+  return Math.floor((Math.random()*max))
 }
 function generateArrayFootballTeamsAndFouls() {
     for (let i=0; i<footballTeams.length;i++) {
